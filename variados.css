@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0px;
+  font-family: n ;
+}
+/* Encabezados */
+.logo{
+  display:block;
+  background-color: gray;   
+}
+.titulo{
+  margin-left: 90px;
+  background-color: gray;
+  position: relative;
+  margin-top: -100px;
+  padding: 10px 20px;
+  display: block;
+  color :white;
+}
+body{
+  display: grid;
+}
+/* subtitulo */
+h2{
+  color:red;
+}
+.container{
+  text-align: center;
+  margin-top: 40px;
+}
+/* Botones de eleccion  */
+.navegation{
+  margin-top: -90px;
+  text-align: right ;
+}
+.navegation ul{
+  list-style: none;
+}
+.menu{
+  text-align: right;
+  background-position: right;
+}
+.menu > li{
+  position: relative;
+  margin-right: 30px;
+  display: inline-block;
+}
+.menu > li > a {
+  margin-top: 50px;
+  margin-left: 40px;
+display: block;
+padding: 15px 0px;
+color: white;
+font-family: negrita;
+text-decoration: none;
+}
+.leer{
+  margin-left: 1100px;
+  margin-top: 5px;
+}
+.leer a {
+  border: 2px solid ;
+  color: black;
+  border-radius: 2px;
+  border-color: transparent;
+  background-color: tomato;
+}
+.menu li a:hover{
+  color: red;
+  transition: all .3s;
+}
+/* submenu */
+.submenu {
+  position: absolute;
+  background: black;
+  width: 130%;
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s;  
+}
+.submenu li a {
+  display: block;
+  padding: 2px;
+  color: white;
+  font-family: negrita;
+  text-decoration: none;
+}
+.menu li:hover .submenu{
+  visibility: visible ;
+  opacity: 1;
+}
+/* texto  */
+.colorTodo{
+  background: skyblue;
+  margin-top: -3px;
+}
+.paragraph{
+  color: red;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.Desarrollo{
+  color: blue;
+  margin-left: 1100px;
+  margin-top: -100px;
+
+}
+.mision{
+  color: tomato;
+  margin-left: 10px;
+  margin-top: 30px;
+
+}
+.vision{
+  margin-top: -62px;
+  margin-left: 1100px;
+  color: violet;
+}
+.history{
+  margin-left: 1600px;
+  margin-top: -100px;
+}
+.text1{
+  margin-left: 10px;
+  margin-top: 5px;
+  color:black;
+}
+.text2{
+  margin-left: 1100px;
+  margin-top: 5px;
+}
+.tex3{
+  margin-left: 12px;
+  margin-top: px;
+}
+.tex4{
+margin-left: 1100px;
+}
+/* icons */
+.icons{
+  margin-top: -70px;
+}
+p.inform{
+  margin-top: -35px;
+  margin-left: 40px;
+  color:white;
+}
+.email{
+  margin-top: -5px;
+  margin-left: 5px;
+}
+.busca{
+  margin-top: -30px;
+  margin-left: 40px;
+  color: white;
+}
+/* pie de pagina */
+.RUC{
+  color: white;
+  text-align: center;
+}
+.pie-pagina{
+  background-color: gray;
+  color: white;
+}
+.canal{
+  list-style: none;
+  background-color: gray;
+  margin-top: -20px;
+  margin-left : 1500px;
+}
+.canal a {
+  color: blue;
+}
+.url{
+  background-color: gray;
+}
+.url a {
+  color: blue;
+  margin-left: 870px;
+  list-style: none;
+  margin-top :2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
