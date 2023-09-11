@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio </a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contactanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <h1> Historia Futbolistica  </h1>
+    </header>
+    <h2>imagenes circulares</h2>
+    <div class="imagenes">
+        <img src="balones_oro.jpg" width="200">
+        <img src="cr7_carrera.jpg" width="200">
+        <img src="cristiano-07.jpg" width="200">
+    </div>  
+    <br>
+    <br>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+            Ratione ex amet magnam? Porro sequi harum,
+            quasi voluptatum <br> earumvero quibusdam culpa quas,
+            dolorem maxime repudiandae <br> nihil cupiditate assumenda 
+            totam corrupti?</p>
+        <br>
+            <a href="https://vallegrande.edu.pe/">Ver más </a>
+        </div>
+        <br>
+        <br>
+        <br>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pcTfmZiIUdU?si=a34QiSCYzXh2AYCN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Calendario</p>
+    <input type="date">
+        <div class="info">
+            <!-- Contenido de la información 3 -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+            Voluptatum dolorem nam itaque eligendi tenetur soluta. Blanditiis 
+            iusto aspernatur distinctio,maxime nemo modi <br>
+            deserunt debitis ab. Repellat laudantium doloremque labore sed!</p>
+        </div>
+    </div>
+    <button class="ver-mas">Mostrar contendo </button>
+    <button class="ver-menos">ocultar</button>
+    </div>
+    <script>
+  // Obtener todos los botones "Ver más" y "Ver menos"
+    const verMasBotones = document.querySelectorAll('.ver-mas');
+    const verMenosBotones = document.querySelectorAll('.ver-menos');
+    const infoSections = document.querySelectorAll('.info');
+
+// Agregar un evento de clic a todos los botones "Ver más"
+    verMasBotones.forEach((boton, index) => {
+    boton.addEventListener('click', () => {
+        // Mostrar la información correspondiente con una animación
+        infoSections[index].style.maxHeight = 'none';
+        boton.style.display = 'none';
+        verMenosBotones[index].style.display = 'inline-block';
+    }); 
+  });
+
+// Agregar un evento de clic a todos los botones "Ver menos"
+    verMenosBotones.forEach((boton, index) => {
+    boton.addEventListener('click', () => {
+        // Ocultar la información correspondiente con una animación
+        infoSections[index].style.maxHeight = '0';
+        boton.style.display = 'none';
+        verMasBotones[index].style.display = 'inline-block';
+    });
+    });
+    </script>
+</body>
+</html>
