@@ -13,6 +13,7 @@
             <img src="img/Logo-VG_Tpt02.png" alt="">
 
             <div class="options">
+                <form action="#" onsubmit="return validarCorreo()" autocomplete="off"> <!--Llamamos a la funcion y desactivamos para que no nos muestre opciones-->
                 <label >
                     <input type="radio" required> Analisis de sistemas
                 </label>
@@ -21,7 +22,6 @@
                 </label>
             </div>
             <div class="questions">
-                <form action="#" onsubmit="return validarCorreo()" autocomplete="off"> <!--Llamamos a la funcion y desactivamos para que no nos muestre opciones-->
                     <input type="text" id="pregunta1" placeholder="Nombres completos" name="nombre" required > <br>
                     <input type="text" id="pregunta2" placeholder="Apellidos"  required > <br>
                     <input type="number" id="pregunta3" placeholder="Edad" accept="number " required> <br>
