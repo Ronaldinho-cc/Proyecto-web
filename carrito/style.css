@@ -2,15 +2,64 @@ body{
     font-family: system-ui;
 }
 header{
-    background-color: #e4e4e8;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    box-shadow: 0 7px 8px -3px grey;
-    position: fixed;
+    background-color: green;
+    padding: 25px;
+
     width: 100%;
-    margin-top: -10px;
-    z-index: 99;
+    font-family:cursive ;
+
 }
+contenedor {
+    display: flex;
+    flex-direction: row-reverse;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+nav{
+    margin-top: -220px;
+}
+nav ul {
+    list-style: none;
+    padding: 8px 5px;
+    text-align: right;
+    
+}   
+nav ul li {
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    transition: color 0.3s;
+}
+
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    border-radius: 0 0 ;
+}
+nav ul li:hover{
+    background-color: #1b1b1b;
+    border-radius: 5px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
 .container{
     max-width: 1200px;
     text-align: center;
@@ -42,21 +91,25 @@ header{
     width: 164px;
     height: 84px;
     cursor: pointer;
+    text-align: right;
+    margin-right: 110rem;
+    border-radius: 50px;
 }
 
 .cart{
     width: 39px;
     height: 38px;
+    margin-left: 1500px;
+    
 }
 .cart-products{
     position: absolute!important;
     top: 82px;
-    right: -18px;
+    right: -400px;
     background-color: #fff;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-
     min-width: 290px;
 }
 
@@ -165,18 +218,6 @@ p.close-btn{
     cursor: pointer;
     color: #000;
 }
-p.author {
-    display: flex;
-    justify-content: center;
-    FONT-VARIANT: JIS04;
-    margin-top: 3%;
-    gap: 7px;
-}
-p.author a {
-    text-decoration: none;
-    font-weight: 700;
-    color: #000;
-}
 /*Formulario*/
 /*Estilos generales */
 body {
@@ -193,6 +234,7 @@ h1 {
 }
 
 form {
+    font-size: 18px;
     max-width: 400px;
     margin: 0 auto;
     background-color: #fff;
@@ -214,14 +256,14 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="date"] {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -235,6 +277,7 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 150px;
 }
 
 /* Estilo para campos requeridos */
@@ -251,7 +294,7 @@ textarea:invalid {
 
 /* Estilo para el botón de enviar al pasar el mouse */
 input[type="submit"]:hover {
-    background-color: #258f28;
+    background-color: #f44336;
 }
 
 /* Estilos para el mensaje de error */

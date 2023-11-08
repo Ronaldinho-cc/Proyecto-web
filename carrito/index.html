@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart Js</title>
+    <title>Productos Ecologicos</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
+        <img class="logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWGXP7unlM6i-aSeexv251esD86JmhRnSHg&usqp=CAU" alt="">
         <div class="header-section container">
-            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWGXP7unlM6i-aSeexv251esD86JmhRnSHg&usqp=CAU" alt="">
-            <h2>Mercado de productos Organicos</h2>
             <div>
                 <img onclick="showCart(this)" class="cart" src="cart.png" alt="">
                 <p class="count-product">0</p>
@@ -44,6 +41,22 @@
                 </div>
                 <h2>Total: $<strong class="price-total">0</strong></h2>
             </div>
+        </div>
+        <h2>Productos Organicos</h2>
+            <div class="contenedor">
+            <nav>
+                <ul>
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Sección</a>
+                        <ul>
+                            <li><a href="#">Frutas </a></li>
+                            <li><a href="#">Vegetal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section class="container">
@@ -106,7 +119,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8qdlbMYFTvsXH4_O99hACWcpxS6qZY6loDA&usqp=CAU" alt="">
                     <p><span>23.99</span>$</p>
                 </div>
-                <br><br><br><br><br>
+                <br><br><br><br><br><br>
                 <p class="title"> Tomates Organicos <br> Buen Estado</p>
                 <a href="" data-id="7" class="btn-add-cart">Comprar</a>
             </div>
@@ -115,7 +128,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNRG2K06reBfUDAy8W_qDaSsO5CvF9DOicA&usqp=CAU" alt="">
                     <p><span>50</span>$</p>
                 </div>
-                <br><br><br><br><br>
+                <br><br><br><br><br><br>
                 <p class="title"> Apios organicas <br> Buen Estado</p>
                 <a href="" data-id="8" class="btn-add-cart">Comprar</a>
             </div>
@@ -123,6 +136,7 @@
     </section>
     <!--Formulario -->
     <form action="#" method="post" onsubmit="return validarFormulario()">
+        <h3>Registre sus Datos </h3>
         <div>
             <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre" name="nombre" required>
