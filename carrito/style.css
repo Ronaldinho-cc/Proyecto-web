@@ -99,18 +99,20 @@ nav ul li:hover > ul {
 .cart{
     width: 39px;
     height: 38px;
-    margin-left: 1500px;
+    padding: 5px;
+    margin-left: 1440px;
     
 }
 .cart-products{
     position: absolute!important;
     top: 82px;
-    right: -400px;
+    right: -320px;
     background-color: #fff;
-    padding: 0 18px;
+    padding: 0 1px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-    min-width: 290px;
+    width: 320px;
+    min-width: 210px;
 }
 
 .cart:hover{

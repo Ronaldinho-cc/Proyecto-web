@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+header{
+    padding: 30px;
+    background-color: black;
+}
+body{
+        background: linear-gradient(to bottom, #BFE6FF, #A2D4EC, #82CFFD);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilizamos flexbox para alinear elementos en una fila */
+    justify-content: flex-end;
+    padding-right: 100px; /* Agrega espacio a la derecha */
+    
+}
+
+nav ul li {
+    margin-top: -20px;
+    margin-right: 20px; /* Ajusta el espacio entre los elementos <li> */
+    margin-left: 35px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento <li> para evitar espacios adicionales */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Cambia el color del texto a tu preferencia */
+    padding: 8px 12px; /* Ajusta el relleno interno para dar espacio alrededor del texto */
+    border: 1px solid #ccc; /* Agrega un borde para resaltar los enlaces */
+    border-radius: 5px; /* Redondea los bordes */
+}
+a:hover{
+    background-color: aqua;
+    color:white;
+    border: 2px solid;
+    border-color: #34db74 ;
+}
+
+/*ESTILOS LAS SECCIONES */
+section{
+    text-align: center;
+}
+.sec-proyec{
+    width: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    background-color: white;
+    margin: 55px;
+    padding: 10px;
+}
+.sec-proyec  img{
+    padding: 15px 10px;
+}
+.titulo{
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    color:black;
+}
+
+.ver-mas {
+    text-align: center;
+    margin-top: 20px;
+    border-color: #34db74 aqua black ;
+    border: 2px solid ;
+    border-color: #34db74;
+    padding: 8px;
+    border-radius: 50px;
+}
+.description{
+    text-align: justify;
+    display: none ;
+}
+
+ /* Estilos del pie de página */
+.footer {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.contact-info p{
+  color: white;
+  margin-bottom: 15px;
+}
+.contact-info a{
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  padding: 20px;
+  color: beige;
+  font-size: 22px;
+}
+
+
+/* Eliminar la línea de borde inferior */
+.footer {
+  border-bottom: none;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 18px; /* Ajusta el padding del encabezado */
+    }
+    .title{
+        padding: 15px;
+        text-align: center;
+    }
+    .titulo{
+        font-size: 12px;
+    }
+    nav ul {
+        justify-content: center; /* Centra los elementos del menú */
+        padding-right: 0; /* Elimina el espacio a la derecha */
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 13px; /* Ajusta los márgenes de los elementos <li> */
+        text-align: center; /* Centra el texto del menú */
+    }
+    .sec-proyec {
+        width: 60%;
+        padding: 29px;
+        margin: 10px auto;
+        justify-content: space-around;
+    }
+    .sec-proyec img{
+        width: 75%;
+    }
+    .form{
+        margin-bottom: 1px;
+        width: 80%
+    }
+    
+.social-icons a {
+  margin-right: 10px;
+  padding: 2px;
+  color: beige;
+  font-size: 22px;
+}
+  }
+  /* Incluir Font Awesome (debe importarse desde su CDN) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+  

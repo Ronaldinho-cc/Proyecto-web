@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+header{
+    padding: 30px;
+    background-color: black;
+}
+body{
+        background: linear-gradient(to bottom, #BFE6FF, #A2D4EC, #82CFFD);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utilizamos flexbox para alinear elementos en una fila */
+    justify-content: flex-end;
+    padding-right: 100px; /* Agrega espacio a la derecha */
+    
+}
+
+nav ul li {
+    margin-top: -20px;
+    margin-right: 20px; /* Ajusta el espacio entre los elementos <li> */
+    margin-left: 35px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento <li> para evitar espacios adicionales */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Cambia el color del texto a tu preferencia */
+    padding: 8px 12px; /* Ajusta el relleno interno para dar espacio alrededor del texto */
+    border: 1px solid #ccc; /* Agrega un borde para resaltar los enlaces */
+    border-radius: 5px; /* Redondea los bordes */
+}
+a:hover{
+    background-color: aqua;
+    color:white;
+    border: 2px solid;
+    border-color: #34db74 ;
+}
+/*ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    max-height:80%;
+  }
+  
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  /*fin del modal*/
+/*Estilos para info sobre mi */
+.info{
+    padding: 1% 10px;
+    margin: 15px;
+}
+.info img {
+    width: 10%;
+    float: left; /* Coloca la imagen a la izquierda */
+    margin-left: 260px; /* Espacio entre la imagen y el texto */
+    border-radius: 100%;
+}
+
+.info p.date {
+    margin-left: 40%;
+    margin-top: 5%; 
+    width: 30%;
+    font-size: 19px;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.clear {
+    clear: both; /* Limpia el float */
+}
+
+/*ESTILOS LAS SECCIONES */
+section{
+    text-align: center;
+}
+.sec-proyec{
+    display: inline-block;
+    background-color: white;
+    margin: 55px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+}
+.sec-proyec  img{
+    width: 90%;
+    padding: 15px 10px;
+}
+.titulo{
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    color:black;
+}
+.enlace {
+    padding: 40px;
+    border-color: #34db74 aqua black ;
+}
+.enlace a {
+    text-decoration: none;
+    border: 2px solid ;
+    border-color: #34db74;
+    padding: 10px;
+    border-radius: 50px;
+}
+.description{
+    padding: 1px 50px;
+    text-align: justify;
+    font-size: 17px;
+    display: non;
+}
+/* Estilos del pie de página */
+.footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .contact-info p{
+    color: white;
+    margin-bottom: 15px;
+  }
+  .contact-info a{
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    padding: 20px;
+    color: beige;
+    font-size: 22px;
+  }
+  
+  
+  /* Eliminar la línea de borde inferior */
+  .footer {
+    border-bottom: none;
+  }
+  @media (max-width: 1480px) {
+    .info img{
+      margin-left: 10px;
+    }
+    .sec-proyec {
+        width: 50%;
+    }
+
+    }
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 18px; /* Ajusta el padding del encabezado */
+    }
+    .title{
+        padding: 15px;
+        text-align: center;
+    }
+    nav ul {
+        justify-content: center; /* Centra los elementos del menú */
+        padding-right: 0; /* Elimina el espacio a la derecha */
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 13px; /* Ajusta los márgenes de los elementos <li> */
+        text-align: center; /* Centra el texto del menú */
+    }
+
+    section{
+        margin-bottom: 1px;
+    }
+
+    .info img {
+        width: 30%;
+        margin-left: 1px;
+        border-radius: 30px;    
+    }
+    .info {
+        text-align: center;
+    }
+    .info p.date {
+        margin-left: 150px;
+        padding: 1px; /* Resetea el margen izquierdo */
+        margin-top: 50px;
+        width: 68%; /* Haz que el texto ocupe todo el ancho disponible */
+        font-size: 15px; /* Ajusta el tamaño de fuente */
+        text-align: justify;
+    }
+    .sec-proyec {
+        width: 80%;
+        padding: 29px;
+        flex: 0 0 calc(90% - 20px); /* Ocupa todo el ancho en pantallas pequeñas */
+        margin: 10px auto;
+        justify-content: space-around;
+    }
+
+    .enlace {
+        padding: 20px; /* Ajusta el padding de los enlaces */
+    }
+        
+.social-icons a {
+    margin-right: 10px;
+    padding: 2px;
+    color: beige;
+    font-size: 22px;
+  }
+}

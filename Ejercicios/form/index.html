@@ -22,7 +22,9 @@
             </div>
             <div class="questions">
                 <form action="#" onsubmit="return validarCorreo()" autocomplete="off"> <!--Llamamos a la funcion y desactivamos para que no nos muestre opciones-->
-                    <input type="text" id="pregunta1" placeholder="Nombres completos" name="nombre" required > <br>
+                    <label for="pregunta1">Nombes : 
+                        <input type="text" id="pregunta1" placeholder="Nombres completos" name="nombre" required > <br>
+                    </label>
                     <input type="text" id="pregunta2" placeholder="Apellidos"  required > <br>
                     <input type="number" id="pregunta3" placeholder="Edad" accept="number " required> <br>
                     <input type="email" id="correo" placeholder="correo" required> <br>
