@@ -433,6 +433,7 @@ public class Formulario extends javax.swing.JFrame {
     txtEstado.setText("");
     txtEspecialidad.setSelectedItem("");
     txtCantidad.setValue(0);
+    txtId.requestFocus();
     }
     
     void limpiarTable(DefaultTableModel model){
