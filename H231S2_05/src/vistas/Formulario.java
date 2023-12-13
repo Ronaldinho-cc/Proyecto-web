@@ -357,6 +357,7 @@ public class Formulario extends javax.swing.JFrame {
         try {
             if(modelo.equals("") || marca.equals("") || especialidad.equals("")|| mantenimiento.equals("") || fabricacion.equals("") || estado.equals("") ){
                 JOptionPane.showMessageDialog(null, "Ingrese datos");
+                 limpiarTable(model);
             }else{
                 try {
                     con = cn.getConnection();
